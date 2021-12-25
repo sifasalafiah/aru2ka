@@ -27,7 +27,7 @@ Publish aru2ka style:
 php artisan vendor:publish --tag=aru2ka
 ```
 
-Finalizing the installatio:
+Finalizing the installation:
 
 ```
 npm install
