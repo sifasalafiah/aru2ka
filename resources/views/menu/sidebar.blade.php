@@ -14,6 +14,23 @@
                 <div class="item">
                     <div class="header">Title</div>
                 </div>
+                <!-- multi -->
+                <div class="ui accordion sidebar__accordion m-b-1" data-role="sidebar-accordion">
+                    <div
+                        class="title">
+                        <i class="left icon user-friends"></i>
+                        <span>Tit</span>
+                        <i class="angle down icon"></i>
+                    </div>
+                    <div
+                        class="content">
+                        <div class="ui list">
+                            <a href="#" data-parent="jbjbsj"
+                                class="item">title</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end multi -->
                 <div class="ui accordion sidebar__accordion">
                     <a class="title empty" href="#">
                         <i class="left icon user-friends"></i>
