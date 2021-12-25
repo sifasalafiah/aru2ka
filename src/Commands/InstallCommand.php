@@ -33,6 +33,7 @@ class InstallCommand extends Command
         $this->addEntries();
         Artisan::call('vendor:publish', ['--tag' => 'aru2ka-styles', '--force' => true]);
         Artisan::call('vendor:publish', ['--tag' => 'aru2ka-views']);
+        Artisan::call('vendor:publish', ['--tag' => 'aru2ka-configs']);
         $this->newLine();
         $this->info(sprintf('Aru2ka is ready'));
 
