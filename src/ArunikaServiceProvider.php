@@ -40,9 +40,9 @@ class ArunikaServiceProvider extends ServiceProvider {
 
     protected function bootViews(): self
     {
-        $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'arunika');
+        $this->loadViewsFrom(dirname(__DIR__,1).'/../resources/views', 'arunika');
         $this->publishes([
-            dirname(__DIR__,1).'/resources/views' => resource_path('views/vendor/aru2ka'),
+            dirname(__DIR__,1).'/../resources/views' => resource_path('views/vendor/aru2ka'),
         ], 'aru2ka-views');
 
         return $this;
@@ -51,7 +51,7 @@ class ArunikaServiceProvider extends ServiceProvider {
     protected function bootAsset(): self
     {
         $this->publishes([
-            dirname(__DIR__,1).'/public' => public_path('vendor/aru2ka'),
+            dirname(__DIR__,1).'/../public' => public_path('vendor/aru2ka'),
         ], 'aru2ka-styles');
 
         return $this;
@@ -59,22 +59,22 @@ class ArunikaServiceProvider extends ServiceProvider {
 
     protected function bootRoutes(): self
     {
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         return $this;
     }
     
     public function register()
     {
         $this->mergeConfigFrom(
-            dirname(__DIR__,1).'/config/arunika/asset.php',
+            dirname(__DIR__,1).'/../config/arunika/asset.php',
             'arunika.asset'
         );
         $this->mergeConfigFrom(
-            dirname(__DIR__,1).'/config/arunika/platform.php',
+            dirname(__DIR__,1).'/../config/arunika/platform.php',
             'arunika.platform'
         );
         $this->mergeConfigFrom(
-            dirname(__DIR__,1).'/config/arunika/ui.php',
+            dirname(__DIR__,1).'/../config/arunika/ui.php',
             'arunika.ui'
         );
     }
