@@ -12,6 +12,9 @@ class ArunikaServiceProvider extends ServiceProvider {
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'arunika');
+        $this->publishes([
+            dirname(__DIR__,1).'/public' => public_path('vendor/aru2ka'),
+        ], 'public');
         Blade::component('coda-base', Base::class);
         // Blade::component('coda-base', 'App\View\Components\Layout\Base');
         // Blade::component('coda-app', 'App\View\Components\Layout\App');

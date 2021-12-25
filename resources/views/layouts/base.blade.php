@@ -10,6 +10,7 @@
     <meta name="turbolinks-enabled" content="{{ config('arunika.platform.features.turbolinks') }}">
 
     @stack('meta')
+
     <style>
         :root {
             --app-accent-color: var(--{{ config('arunika.ui.color') }});
@@ -17,18 +18,16 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" data-turbolinks-track="reload"
-          href="{{ asset('semantic/semantic.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" data-turbolinks-track="reload" href="{{ asset('css/all.css') }}"/>
-    <link rel="stylesheet" type="text/css" data-turbolinks-track="reload" href="{{ asset('css/app.css') }}"/>
+          href="{{ mix('semantic/semantic.min.css', 'vendor/aru2ka') }}"/>
+    <link rel="stylesheet" type="text/css" data-turbolinks-track="reload" href="{{ mix('css/all.css', 'vendor/aru2ka') }}"/>
+    <link rel="stylesheet" type="text/css" data-turbolinks-track="reload" href="{{ mix('css/app.css') }}"/>
 
     @stack('style')
     @stack('head')
+    <script data-turbolinks-track="reload" src="{{ mix('js/vendor.js', 'vendor/aru2ka') }}"></script>
+    <script defer data-turbolinks-track="reload" src="{{ mix('js/platform.js', 'vendor/aru2ka') }}"></script>
 
-    <script data-turbolinks-track="reload" src="{{ asset('js/vendor.js') }}"></script>
-
-    <script defer data-turbolinks-track="reload" src="{{ asset('js/platform.js') }}"></script>
-
-    <script defer data-turbolinks-track="reload" src="{{ asset('js/app.js') }}"></script>
+    <script defer data-turbolinks-track="reload" src="{{ mix('js/app.js') }}"></script>
 </head>
 
 <body data-theme="{{ config('arunika.ui.theme') }}" class="{{ $bodyClass ?? '' }} @yield('body.class')">
