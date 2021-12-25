@@ -5,13 +5,6 @@ To get started with Aru2ka, use Composer to add the package to your project's de
 ```
 composer require codakarta/aru2ka
 ```
-
-Publish aru2ka style:
-
-```
-php artisan vendor:publish --tag=aru2ka
-```
-
 Register the service provider:
 
 ```
@@ -21,6 +14,17 @@ Register the service provider:
     */
     Codakarta\Aru2ka\ArunikaServiceProvider::class,
 ],
+```
+Run 'config:cache' commands:
+
+```
+php artisan config:cache
+```
+
+Publish aru2ka style:
+
+```
+php artisan vendor:publish --tag=aru2ka
 ```
 
 Finalizing the installatio:
