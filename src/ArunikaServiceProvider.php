@@ -82,9 +82,9 @@ class ArunikaServiceProvider extends ServiceProvider {
     protected function bootConfigs(): self
     {
         $this->publishes([
-            dirname(__DIR__,1).'/config/arunika/asset.php' => config_path('asset.php'),
-            dirname(__DIR__,1).'/config/arunika/platform.php' => config_path('platform.php'),
-            dirname(__DIR__,1).'/config/arunika/ui.php' => config_path('ui.php'),
+            dirname(__DIR__,1).'/config/arunika/asset.php' => config_path('arunika/asset.php'),
+            dirname(__DIR__,1).'/config/arunika/platform.php' => config_path('arunika/platform.php'),
+            dirname(__DIR__,1).'/config/arunika/ui.php' => config_path('arunika/ui.php'),
         ], 'aru2ka-configs');
 
         return $this;
