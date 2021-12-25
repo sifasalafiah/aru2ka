@@ -21,10 +21,10 @@ Run 'config:cache' commands:
 php artisan config:cache
 ```
 
-Publish aru2ka style:
+Publish aru2ka files:
 
 ```
-php artisan vendor:publish --tag=aru2ka
+php artisan aru2ka:install
 ```
 
 Finalizing the installation:
