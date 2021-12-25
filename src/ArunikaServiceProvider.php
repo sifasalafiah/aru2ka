@@ -18,8 +18,7 @@ class ArunikaServiceProvider extends ServiceProvider {
         $this
         ->bootViews()
         ->bootAsset()
-        ->bootRoutes()
-        ->bootComponents();
+        ->bootRoutes();
         $this->commands($this->commands);
         Blade::component('coda-base', 'Codakarta\Aru2ka\Components\Layouts\Base');
         Blade::component('coda-app', 'Codakarta\Aru2ka\Components\Layouts\App');
