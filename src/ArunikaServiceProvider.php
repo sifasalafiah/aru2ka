@@ -15,14 +15,11 @@ class ArunikaServiceProvider extends ServiceProvider {
 
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'arunika');
-        $this->publishes([
-            dirname(__DIR__,1).'/public' => public_path('vendor/aru2ka'),
-        ], 'aru2ka-styles');
-        $this->publishes([
-            dirname(__DIR__,1).'/resources/views' => resource_path('views/vendor/aru2ka'),
-        ], 'aru2ka-views');
+        $this
+        ->bootViews()
+        ->bootAsset()
+        ->bootRoutes()
+        ->bootComponents();
         $this->commands($this->commands);
         Blade::component('coda-base', 'Codakarta\Aru2ka\Components\Layouts\Base');
         Blade::component('coda-app', 'Codakarta\Aru2ka\Components\Layouts\App');
@@ -40,6 +37,32 @@ class ArunikaServiceProvider extends ServiceProvider {
         Blade::component('coda-tab', 'Codakarta\Aru2ka\Components\Ui\Tab');
         Blade::component('coda-tab-content', 'Codakarta\Aru2ka\Components\Ui\TabContent');
     }
+
+    protected function bootViews(): self
+    {
+        $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'arunika');
+        $this->publishes([
+            dirname(__DIR__,1).'/resources/views' => resource_path('views/vendor/aru2ka'),
+        ], 'aru2ka-views');
+
+        return $this;
+    }
+
+    protected function bootAsset(): self
+    {
+        $this->publishes([
+            dirname(__DIR__,1).'/public' => public_path('vendor/aru2ka'),
+        ], 'aru2ka-styles');
+
+        return $this;
+    }
+
+    protected function bootRoutes(): self
+    {
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        return $this;
+    }
+    
     public function register()
     {
         $this->mergeConfigFrom(
