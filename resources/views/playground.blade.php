@@ -256,21 +256,21 @@
                         </div>
                         <div class="ui divider section"></div>
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-button class="{{ $color }}">{{ $color }}</x-coda-button>
                             </div>
                             @endforeach
                         </div>
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-button class="{{ $color }} secondary">{{ $color }}</x-coda-button>
                             </div>
                             @endforeach
                         </div>
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-button class="{{ $color }} basic">{{ $color }}</x-coda-button>
                             </div>
@@ -284,28 +284,28 @@
                     <!-- coda label  -->
                     <x-coda-panel title="Label">
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-label :color="'solid '.$color">{{ $color }}</x-coda-label>
                             </div>
                             @endforeach
                         </div>
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-label :color="$color">{{ $color }}</x-coda-label>
                             </div>
                             @endforeach
                         </div>
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-label :color="'basic '.$color">{{ $color }}</x-coda-label>
                             </div>
                             @endforeach
                         </div>
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-label :color="'circular empty '.$color"></x-coda-label>
                             </div>
@@ -313,7 +313,7 @@
                         </div>
                         <div class="divider"></div>
                         <div class="ui horizontal list">
-                            @foreach(config('arunika.ui.colors') as $color => $hex)
+                            @foreach(config('aru2ka.ui.colors') as $color => $hex)
                             <div class="item">
                                 <x-coda-label :color="'circular empty basic '.$color"></x-coda-label>
                             </div>
