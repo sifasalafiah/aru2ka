@@ -12,21 +12,21 @@
             @endauth
             <div class="ui attached vertical menu fluid" data-role="original-menu">
                 <div class="item">
-                    <div class="header">Title</div>
+                    <div class="header">Header</div>
                 </div>
                 <!-- multi -->
                 <div class="ui accordion sidebar__accordion m-b-1" data-role="sidebar-accordion">
                     <div
                         class="title">
                         <i class="left icon user-friends"></i>
-                        <span>Tit</span>
+                        <span>Menu</span>
                         <i class="angle down icon"></i>
                     </div>
                     <div
                         class="content">
                         <div class="ui list">
                             <a href="#" data-parent="jbjbsj"
-                                class="item">title</a>
+                                class="item">Sub Menu</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                 <div class="ui accordion sidebar__accordion">
                     <a class="title empty" href="#">
                         <i class="left icon user-friends"></i>
-                        <span>Title</span>
+                        <span>Menu</span>
                     </a>
                     <div class="content"></div>
                 </div>
