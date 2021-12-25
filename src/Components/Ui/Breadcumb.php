@@ -23,6 +23,6 @@ class Breadcumb extends Component
      */
     public function render()
     {
-        return view('arunika::ui.breadcumb');
+        return view('aru2ka::ui.breadcumb');
     }
 }

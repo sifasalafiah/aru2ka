@@ -35,6 +35,6 @@ class CardFooter extends Component
      */
     public function render()
     {
-        return view('arunika::ui.card-footer');
+        return view('aru2ka::ui.card-footer');
     }
 }

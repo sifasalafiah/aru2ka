@@ -26,6 +26,6 @@ class Base extends Component
      */
     public function render()
     {
-        return view('arunika::layouts.base');
+        return view('aru2ka::layouts.base');
     }
 }

@@ -45,6 +45,6 @@ class Link extends Component
             $this->class = config('laravolt.ui.color').' '.$this->class;
         }
 
-        return view('arunika::ui.link');
+        return view('aru2ka::ui.link');
     }
 }

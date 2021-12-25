@@ -2,7 +2,7 @@
     <div class="layout--app">
         <main class="content">
             <div class="content__inner">
-                @include('components.menu.actionbar')
+                @include('aru2ka::menu.actionbar')
                 <div class="ui container-fluid content__body p-3">
                     {{ $slot }}
                 </div>

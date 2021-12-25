@@ -32,6 +32,6 @@ class Panel extends Component
      */
     public function render()
     {
-        return view('arunika::ui.panel');
+        return view('aru2ka::ui.panel');
     }
 }

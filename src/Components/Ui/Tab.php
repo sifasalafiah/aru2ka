@@ -28,6 +28,6 @@ class Tab extends Component
      */
     public function render()
     {
-        return view('arunika::ui.tab');
+        return view('aru2ka::ui.tab');
     }
 }

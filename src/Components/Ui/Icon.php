@@ -23,6 +23,6 @@ class Icon extends Component
      */
     public function render()
     {
-        return view('arunika::ui.icon');
+        return view('aru2ka::ui.icon');
     }
 }

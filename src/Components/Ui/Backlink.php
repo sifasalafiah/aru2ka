@@ -28,6 +28,6 @@ class Backlink extends Component
      */
     public function render()
     {
-        return view('arunika::ui.backlink');
+        return view('aru2ka::ui.backlink');
     }
 }

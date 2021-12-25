@@ -45,6 +45,6 @@ class Button extends Component
             $this->class = config('laravolt.ui.color').' '.$this->class;
         }
 
-        return view('arunika::ui.button');
+        return view('aru2ka::ui.button');
     }
 }

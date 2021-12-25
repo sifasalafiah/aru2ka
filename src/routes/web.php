@@ -1,5 +1,5 @@
 <?php
     Route::get('/playground', function(){
-        return view('arunika::playground');
+        return view('aru2ka::playground');
     });
 ?>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}" data-font-size="{{ config('arunika.ui.font_size') }}">
+<html lang="{{ config('app.locale') }}" data-font-size="{{ config('aru2ka.ui.font_size') }}">
 <head>
     <title>{{ $title ?? '' }} | {{ config('app.name') }}</title>
 
@@ -7,14 +7,14 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <meta name="turbolinks-cache-control" content="no-cache">
-    <meta name="turbolinks-enabled" content="{{ config('arunika.platform.features.turbolinks') }}">
+    <meta name="turbolinks-enabled" content="{{ config('aru2ka.platform.features.turbolinks') }}">
 
     @stack('meta')
 
     <style>
         :root {
-            --app-accent-color: var(--{{ config('arunika.ui.color') }});
-            --app-login-background: url('{{ url(config('arunika.ui.login_background')) }}');
+            --app-accent-color: var(--{{ config('aru2ka.ui.color') }});
+            --app-login-background: url('{{ url(config('aru2ka.ui.login_background')) }}');
         }
     </style>
     <link rel="stylesheet" type="text/css" data-turbolinks-track="reload"
@@ -30,7 +30,7 @@
     <script defer data-turbolinks-track="reload" src="{{ mix('js/app.js') }}"></script>
 </head>
 
-<body data-theme="{{ config('arunika.ui.theme') }}" class="{{ $bodyClass ?? '' }} @yield('body.class')">
+<body data-theme="{{ config('aru2ka.ui.theme') }}" class="{{ $bodyClass ?? '' }} @yield('body.class')">
 
 {{ $slot }}
 

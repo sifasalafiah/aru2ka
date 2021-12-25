@@ -23,6 +23,6 @@ class Guest extends Component
      */
     public function render()
     {
-        return view('arunika::layouts.guest');
+        return view('aru2ka::layouts.guest');
     }
 }
