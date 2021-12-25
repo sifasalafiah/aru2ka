@@ -39,7 +39,7 @@ class ArunikaServiceProvider extends ServiceProvider {
 
     protected function bootViews(): self
     {
-        $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'arunika');
+        $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'aru2ka');
         $this->publishes([
             dirname(__DIR__,1).'/resources/views' => resource_path('views/vendor/aru2ka'),
         ], 'aru2ka-views');
