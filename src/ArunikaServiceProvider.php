@@ -4,9 +4,14 @@ namespace Codakarta\Aru2ka;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
-use Codakarta\Aru2ka\Components\Layouts\Base;
+use Codakarta\Aru2ka\Commands\InstallCommand;
+
 
 class ArunikaServiceProvider extends ServiceProvider {
+
+    protected $commands = [
+        InstallCommand::class,
+    ];
 
     public function boot()
     {
@@ -14,7 +19,11 @@ class ArunikaServiceProvider extends ServiceProvider {
         $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'arunika');
         $this->publishes([
             dirname(__DIR__,1).'/public' => public_path('vendor/aru2ka'),
-        ], 'aru2ka');
+        ], 'aru2ka-styles');
+        $this->publishes([
+            dirname(__DIR__,1).'/resources/views' => resource_path('views/vendor/aru2ka'),
+        ], 'aru2ka-views');
+        $this->commands($this->commands);
         Blade::component('coda-base', 'Codakarta\Aru2ka\Components\Layouts\Base');
         Blade::component('coda-app', 'Codakarta\Aru2ka\Components\Layouts\App');
         Blade::component('coda-guest', 'Codakarta\Aru2ka\Components\Layouts\Guest');

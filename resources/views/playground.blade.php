@@ -1,4 +1,4 @@
-<x-coda-base title="Home">
+<x-coda-app title="Home">
     <div class="layout--app">
         <main class="content">
             <div class="content__inner">
@@ -1190,4 +1190,4 @@
         });
 
     </script>
-</x-coda-base>
+</x-coda-app>
