@@ -86,6 +86,8 @@ class ArunikaServiceProvider extends ServiceProvider {
             dirname(__DIR__,1).'/config/arunika/platform.php' => config_path('platform.php'),
             dirname(__DIR__,1).'/config/arunika/ui.php' => config_path('ui.php'),
         ], 'aru2ka-configs');
+
+        return $this;
     }
 
     protected function bootRoutes(): self
