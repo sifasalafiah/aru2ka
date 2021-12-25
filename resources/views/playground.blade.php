@@ -71,7 +71,7 @@
                                         </div>
                                     </div>
                                     <x-slot name="action">
-                                        <x-coda-link-button url="#" icon="edit" class="mini">Edit</x-coda-link-button>
+                                        <x-coda-link url="#" icon="edit" class="mini">Edit</x-coda-link>
                                     </x-slot>
                                     <x-slot name="footer">
                                         Footer
