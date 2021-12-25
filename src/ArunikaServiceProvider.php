@@ -11,7 +11,7 @@ class ArunikaServiceProvider extends ServiceProvider {
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'arunika');
+        $this->loadViewsFrom(dirname(__DIR__,1).'/resources/views', 'arunika');
         Blade::component('coda-base', Base::class);
         // Blade::component('coda-base', 'App\View\Components\Layout\Base');
         // Blade::component('coda-app', 'App\View\Components\Layout\App');
@@ -31,7 +31,18 @@ class ArunikaServiceProvider extends ServiceProvider {
     }
     public function register()
     {
-
+        $this->mergeConfigFrom(
+            dirname(__DIR__,1).'/config/arunika/asset.php',
+            'arunika.asset'
+        );
+        $this->mergeConfigFrom(
+            dirname(__DIR__,1).'/config/arunika/platform.php',
+            'arunika.platform'
+        );
+        $this->mergeConfigFrom(
+            dirname(__DIR__,1).'/config/arunika/ui.php',
+            'arunika.ui'
+        );
     }
 }
 ?>

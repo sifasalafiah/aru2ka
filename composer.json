@@ -3,6 +3,9 @@
     "description": "A beautifull codakarta UI Kit",
     "type": "library",
     "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
     "authors": [
         {
             "name": "Sifa salafiah",
