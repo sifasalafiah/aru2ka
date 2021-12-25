@@ -25,6 +25,6 @@ class App extends Component
      */
     public function render()
     {
-        return view('arunika:layouts.app');
+        return view('arunika::layouts.app');
     }
 }
