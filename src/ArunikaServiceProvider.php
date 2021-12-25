@@ -15,22 +15,21 @@ class ArunikaServiceProvider extends ServiceProvider {
         $this->publishes([
             dirname(__DIR__,1).'/public' => public_path('vendor/aru2ka'),
         ], 'public');
-        Blade::component('coda-base', Base::class);
-        // Blade::component('coda-base', 'App\View\Components\Layout\Base');
-        // Blade::component('coda-app', 'App\View\Components\Layout\App');
-        // Blade::component('coda-guest', 'App\View\Components\Layout\Guest');
-        // Blade::component('coda-button', 'App\View\Components\Ui\Button');
-        // Blade::component('coda-panel', 'App\View\Components\Ui\Panel');
-        // Blade::component('coda-icon', 'App\View\Components\Ui\Icon');
-        // Blade::component('coda-backlink', 'App\View\Components\Ui\Backlink');
-        // Blade::component('coda-breadcumb', 'App\View\Components\Ui\Breadcumb');
-        // Blade::component('coda-cards', 'App\View\Components\Ui\Cards');
-        // Blade::component('coda-card', 'App\View\Components\Ui\Card');
-        // Blade::component('coda-card-footer', 'App\View\Components\Ui\CardFooter');
-        // Blade::component('coda-link-button', 'App\View\Components\Ui\Link');
-        // Blade::component('coda-label', 'App\View\Components\Ui\label');
-        // Blade::component('coda-tab', 'App\View\Components\Ui\Tab');
-        // Blade::component('coda-tab-content', 'App\View\Components\Ui\TabContent');
+        Blade::component('coda-base', 'Codakarta\Aru2ka\Components\Layouts\Base');
+        Blade::component('coda-app', 'Codakarta\Aru2ka\Components\Layouts\App');
+        Blade::component('coda-guest', 'Codakarta\Aru2ka\Components\Layouts\Guest');
+        Blade::component('coda-button', 'Codakarta\Aru2ka\Components\Ui\Button');
+        Blade::component('coda-panel', 'Codakarta\Aru2ka\Components\Ui\Panel');
+        Blade::component('coda-icon', 'Codakarta\Aru2ka\Components\Ui\Icon');
+        Blade::component('coda-backlink', 'Codakarta\Aru2ka\Components\Ui\Backlink');
+        Blade::component('coda-breadcumb', 'Codakarta\Aru2ka\Components\Ui\Breadcumb');
+        Blade::component('coda-cards', 'Codakarta\Aru2ka\Components\Ui\Cards');
+        Blade::component('coda-card', 'Codakarta\Aru2ka\Components\Ui\Card');
+        Blade::component('coda-card-footer', 'Codakarta\Aru2ka\Components\Ui\CardFooter');
+        Blade::component('coda-link-button', 'Codakarta\Aru2ka\Components\Ui\Link');
+        Blade::component('coda-label', 'Codakarta\Aru2ka\Components\Ui\label');
+        Blade::component('coda-tab', 'Codakarta\Aru2ka\Components\Ui\Tab');
+        Blade::component('coda-tab-content', 'Codakarta\Aru2ka\Components\Ui\TabContent');
     }
     public function register()
     {
