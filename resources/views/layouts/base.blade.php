@@ -21,6 +21,7 @@
           href="{{ mix('semantic/semantic.min.css', 'vendor/aru2ka') }}"/>
     <link rel="stylesheet" type="text/css" data-turbolinks-track="reload" href="{{ mix('css/all.css', 'vendor/aru2ka') }}"/>
     <link rel="stylesheet" type="text/css" data-turbolinks-track="reload" href="{{ mix('css/app.css') }}"/>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
     @stack('style')
     @stack('head')

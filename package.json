@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.mix.js",
-  "dependencies": {},
+  "dependencies": {
+    "apexcharts": "^3.32.1"
+  },
   "scripts": {
     "development": "mix",
     "watch": "mix watch",
